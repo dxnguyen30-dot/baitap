@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên - Có UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Quản lý sinh viên</h1>
+
+    <div class="form-group">
+        <label for="txtTen">Tên sinh viên:</label>
+        <input type="text" id="txtTen" placeholder="Nhập tên...">
+    </div>
+    <div class="form-group">
+        <label for="txtDiem">Điểm số:</label>
+        <input type="number" id="txtDiem" step="0.1" placeholder="Nhập điểm (0-10)...">
+    </div>
+    <button id="btnThem">Thêm Sinh Viên</button>
+
+    <hr>
+
+    <h2>Danh sách sinh viên</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên Sinh Viên</th>
+                <th>Điểm Số</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="tbodySinhVien">
+            </tbody>
+    </table>
+
+    <div class="stats" id="khuVucStats">
+        Điểm TB của tất cả Sv là: 0.00
+    </div>
+
+    <script src="sinhvien.js"></script>
+</body>
+</html>
