@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý sinh viên</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="app">
+  <h1>Danh sách sinh viên</h1>
+  <p class="title">Mở Console (F12) để xem thêm kết quả</p>
+  <div class = "form-row">
+    <input type="text" id="tenInput" placeholder="Tên sinh viên">
+    <input type="text" id="diemInput" placeholder="Điểm">
+    <button id="addBtn">Thêm sinh viên</button>
+  </div>
+  <div class="form-row">
+    <input type="text" id="tenXoaInput" placeholder="Nhập tên cần xóa">
+    <button id="deleteBtn">Xóa</button>
+  </div>
+   <div class="form-row">
+    <input type="text" id="tenTimInput" placeholder="Nhập tên cần tìm">
+    <button id="searchBtn">Tìm</button>
+  </div>
+  <div class="toolbar">
+    <button class="filter-btn active" data-filter="all">Tất cả</button>
+    <button class="filter-btn" data-filter="dat">Đã đạt</button>
+  </div>
+  <p id="searchResult"></p>
+  <div id="output"></div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
