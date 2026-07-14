@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #333333;
+}
+header {
+    background-color: #ffffff;
+    display: flex;
+    padding: 10px 8%;
+    position: sticky;
+    top: 0;    
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+}
+header nav a {
+    text-decoration: none;
+    color: #555555
+}
+header nav a:hover{
+    color: #7363ef;
+}
+.hero{
+    background-color: #6c5ce7;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.grid-item {
+    background-color: #ffffff;
+    padding: 40px 30px;   
+}
+.features-section{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.benefits-section, .reviews-section, .downloads-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #e2e1e1;
+}
+footer{
+    background-color: #2d3436;
+    color: #b2bec3;
+    text-align: center;
+    padding: 40px 20px;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+.benefits-section{
+    background-color: #f8f9fa;
+}
+.reviews-section{
+    background-color: #ffffff;
+}
+.btn-download,.btn-download-nav{
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #6c5ce7;
+    padding: 12px 28px;
+    text-decoration: none;
+    margin-top: 15px;
+
+}
+.btn-download-nav:hover {
+    background-color: #f1f0ff;
+}
+.review-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.review-author{
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+.review-text{
+    font-style: italic;
+    line-height: 1.5;
+}
+.benefits-list{
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.benefits-list li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
