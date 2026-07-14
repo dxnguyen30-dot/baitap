@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Việc cần làm</h1>
+  <p class="subtitle">Danh sách việc cần làm</p>
+
+  <div class="input-row">
+    <input type="text" id="task-input" placeholder="Nhập việc cần làm...">
+    <button id="addBtn">Thêm</button>
+  </div>
+
+  <div class="toolbar">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tất cả</button>
+      <button class="filter-btn" data-filter="active">Chưa xong</button>
+      <button class="filter-btn" data-filter="done">Đã xong</button>
+    </div>
+  </div>
+
+  <ul class="task-list" id="task-list"></ul>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ea;
+    padding: 40px;
+}
+.app{
+    max-width: 450px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.subtitle{
+    color :#666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.input-row{
+    margin-bottom: 15px;
+}
+#task-input{
+    width: 70%;
+    padding: 10px;
+    font-size: 15px;
+}
+#addBtn{
+    color: white;
+    background-color: rgba(205, 100, 87, 0.578);
+    cursor: pointer;
+    border:none;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.toolbar{
+    margin-bottom: 15px;
+}
+.filter-btn{
+    background-color:white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.filter-btn.active {
+    color: white;
+    background-color: #333;
+}
+.task-list{
+    padding: 0px;
+    list-style: none;
+}
+.delete-btn{
+    color:crimson;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+.task-text{
+    flex: 1;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+ 
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+ 
+.task-text {
+  flex: 1;
+}
+ 
+.task-text.done {
+  text-decoration: line-through;
+  color: gray;
+}
